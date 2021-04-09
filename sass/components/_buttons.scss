@@ -1,18 +1,23 @@
-.about-text-button {
-
-
-}
-
 .blue-button {
-
-    
-    padding: 1.5rem 4rem;
+    padding: 3rem 4rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 3rem;
     text-decoration: none;
-    background-color: $color-button-blue;
+    background-image: linear-gradient(to right, (rgba(73, 96, 249, .9)), (rgba(73, 96, 249, 1)));
+    //background-color: $color-button-blue;
     color: $color-white;
     font-family: 'montserrat', sans-serif;
+
+    &-phone {
+        float:left;
+        max-height: 2rem;
+        margin-right: .5rem;
+    }
+    &-caption {
+        display: inline-block;
+        font-weight: lighter;
+        font-size: 1.6rem;
+    }
 }
 
 

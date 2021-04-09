@@ -1,18 +1,12 @@
 .build_anything {
     display: flex;
-    flex-direction: row;
     margin-right: 10vw;
-    margin-top: 15rem;
-
-
-    background-color: aquamarine;
+    margin-top: 10rem;
 
     &-image {
-        position: relative;
         flex: 1.7;
+        position: relative;
         margin-left: 5vw;
-
-        background-color: pink;
         
         &-circle {
             max-width: 100%;
@@ -20,13 +14,12 @@
 
         &-top {
             max-width: 100%;
-            position: absolute;
             height: 40%;
+            position: absolute;
             top: 20%;
             left: 15%;
             z-index: 10;
         }
-
     }
 
     &-text {

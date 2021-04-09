@@ -1,16 +1,23 @@
 .footer {
     display: flex;
-    padding: 4rem;
+    justify-content: space-between;
+    padding: 10rem 15rem 1rem 15rem;
     border-top: 1px solid $color-grey;
+    font-size: 1.6rem;
+    font-weight: lighter;
 
     &-left {
         flex: 2;
-        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
-        &-list {
-            list-style: none;
-            text-decoration: none;
-
+        &-figure {
+            margin-bottom: 1rem;
+        }
+        &-shape {
+            float: left;
+            margin-right: 1rem;
         }
         &-copyright {
             color: $color-grey;
@@ -18,7 +25,6 @@
     }
 
     &-right {
-        background-color: plum;
         flex: 1;
         display: flex;
         justify-content: flex-start;
@@ -31,6 +37,7 @@
 
             &_title {
                 font-weight: bold;
+                margin-bottom: 1rem;
             }
         }
     }

@@ -1,9 +1,5 @@
 .about {
     display: flex;
-    flex-direction: row;
-
-    font-weight: lighter;
-    //background-color: yellow;
 
     &-text {
         display: flex;
@@ -13,22 +9,19 @@
         margin-top: 20rem;
         width: 45%;
         
-        //background-color: orange;
-
         &_p {
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-            padding-right: 17rem;
-            //background-color: aqua;
+            padding-top: 3rem;
+            padding-bottom: 4rem;
+            padding-right: 27rem;
         }
     }
+
     &-specialty {
         margin-top: auto;
-        margin-bottom: 15rem;
+        margin-bottom: 10rem;
     }
 
     &-image {
-        //background-color: rgba(138, 44, 226, 0.9);
         width: 110%;
         margin-left: -15%;
         margin-right: -70%;
