@@ -1,0 +1,45 @@
+.about {
+    display: flex;
+    flex-direction: row;
+
+    font-weight: lighter;
+    //background-color: yellow;
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 10vw;
+        margin-top: 20rem;
+        width: 45%;
+        
+        //background-color: orange;
+
+        &_p {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            padding-right: 17rem;
+            //background-color: aqua;
+        }
+    }
+    &-specialty {
+        margin-top: auto;
+        margin-bottom: 15rem;
+    }
+
+    &-image {
+        //background-color: rgba(138, 44, 226, 0.9);
+        width: 110%;
+        margin-left: -15%;
+        margin-right: -70%;
+
+        &-mockup {    
+            max-width: 100%;
+        }
+    }
+}
+
+
+
+
+

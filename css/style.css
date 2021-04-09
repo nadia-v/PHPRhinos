@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Open Sans', 'sans-serif';
+  font-weight: 400;
+  line-height: 1.6;
+  color: #2642FD;
+  min-height: 100vh; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 8rem auto;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden; }
+
+.one {
+  flex: 1;
+  background-color: aquamarine; }
+
+.two {
+  flex: .5;
+  background-color: red; }
+
+.three {
+  flex: 1;
+  background-color: purple; }
+
+.four {
+  flex: 2;
+  background-color: yellow; }
+
+h1 {
+  font-size: 3.8rem;
+  font-weight: 300;
+  line-height: 1.4;
+  display: inline-block;
+  color: #2642FD;
+  font-family: 'motserrat', sans-serif; }
+
+p {
+  font-size: 1.5rem;
+  display: inline-block;
+  color: #2642FD;
+  font-family: 'motserrat', sans-serif; }
+
+.blue-button {
+  padding: 1.5rem 4rem;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: #4960F9;
+  color: white;
+  font-family: 'montserrat', sans-serif; }
+
+.about {
+  display: flex;
+  flex-direction: row;
+  font-weight: lighter; }
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10vw;
+    margin-top: 20rem;
+    width: 45%; }
+    .about-text_p {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      padding-right: 17rem; }
+  .about-specialty {
+    margin-top: auto;
+    margin-bottom: 15rem; }
+  .about-image {
+    width: 110%;
+    margin-left: -15%;
+    margin-right: -70%; }
+    .about-image-mockup {
+      max-width: 100%; }
+
+.build_anything {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10vw;
+  margin-top: 15rem;
+  background-color: aquamarine; }
+  .build_anything-image {
+    position: relative;
+    flex: 1.7;
+    margin-left: 5vw;
+    background-color: pink; }
+    .build_anything-image-circle {
+      max-width: 100%; }
+    .build_anything-image-top {
+      max-width: 100%;
+      position: absolute;
+      height: 40%;
+      top: 20%;
+      left: 15%;
+      z-index: 10; }
+  .build_anything-text {
+    flex: 1;
+    text-align: right; }
+
+.footer {
+  display: flex;
+  padding: 4rem;
+  border-top: 1px solid #9BA9BB; }
+  .footer-left {
+    flex: 2;
+    background-color: aqua; }
+    .footer-left-list {
+      list-style: none;
+      text-decoration: none; }
+    .footer-left-copyright {
+      color: #9BA9BB; }
+  .footer-right {
+    background-color: plum;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; }
+    .footer-right-list {
+      padding-right: 10%;
+      list-style: none;
+      text-decoration: none;
+      color: #9BA9BB; }
+      .footer-right-list_title {
+        font-weight: bold; }
+
+.get_quote {
+  background-color: rgba(255, 255, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10%; }
+  .get_quote-image {
+    flex: 1; }
+  .get_quote-button {
+    flex: 1;
+    padding-top: 10%; }
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 20%;
+  max-width: 100%;
+  background-color: pink; }
+  .icons-icon-text {
+    text-align: center;
+    font-family: 'SF Pro Display', 'sans-serif';
+    color: #9BA9BB; }
+
+.navigation {
+  background-color: white;
+  color: #2E49FC;
+  width: 80vw;
+  margin-right: auto;
+  margin-left: auto; }
+
+.navigation-list {
+  list-style: none;
+  font-size: 1.6rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end; }
+  .navigation-list-logo {
+    margin-right: auto;
+    font-weight: bold; }
+  .navigation-list-options {
+    margin-left: 2rem; }
+
+.winning_situation {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-left: 10vw;
+  background-color: yellow; }
+  .winning_situation-left {
+    height: 100%;
+    flex: 1; }
+  .winning_situation-right {
+    flex: 2.5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding-right: 5vw; }
+    .winning_situation-right-text {
+      text-align: right;
+      padding-right: 10%;
+      padding-left: 10%; }
+    .winning_situation-right-image {
+      position: relative; }
+      .winning_situation-right-image-circle {
+        max-width: 100%; }
+      .winning_situation-right-image-top {
+        max-width: 100%;
+        position: absolute;
+        height: 60%;
+        top: 20%;
+        left: 15%;
+        z-index: 10; }

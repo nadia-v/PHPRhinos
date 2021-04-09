@@ -1,0 +1,21 @@
+.get_quote {
+    background-color:rgba(255, 255, 0, .4);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+
+
+    &-image {
+        flex: 1;
+        &-trophy {
+            
+        }
+    }
+
+    &-button {
+        flex: 1;
+        padding-top: 10%;
+    }
+}

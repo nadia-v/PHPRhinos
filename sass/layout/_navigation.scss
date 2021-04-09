@@ -1,0 +1,28 @@
+.navigation {
+    background-color: $color-white;
+    color: $color-navigation-blue;
+    width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.navigation-list {
+    list-style: none;
+    font-size: 1.6rem;
+    padding: 1rem;
+    display: flex;
+
+    justify-content: flex-end;
+
+    &-logo {
+        margin-right: auto;
+        font-weight: bold;
+    }
+
+    &-options {
+        margin-left: 2rem;
+    }
+}
+
+

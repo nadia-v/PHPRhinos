@@ -1,0 +1,47 @@
+.winning_situation {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 10vw;
+
+    background-color: yellow;
+
+    &-left {
+        height: 100%;
+        flex: 1;
+    }
+
+    &-right {
+        flex: 2.5;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        
+        padding-right: 5vw;
+
+        &-text {
+            text-align: right;
+            padding-right: 10%;
+            padding-left: 10%;
+        }
+
+        &-image {
+            position: relative;
+
+            &-circle {
+                max-width: 100%;
+            }
+    
+            &-top {
+                max-width: 100%;
+                position: absolute;
+                height: 60%;
+                
+                top: 20%;
+                left: 15%;
+                z-index: 10;
+            }
+        }
+    }
+}
