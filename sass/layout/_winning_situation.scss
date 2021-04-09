@@ -40,3 +40,31 @@
         }
     }
 }
+
+@media only screen and(max-width: $medium) {
+    .winning_situation {
+        margin-bottom: 5rem;
+
+        &-right {
+            flex: 2;
+            &-text {
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: $small) {
+    .winning_situation {
+        margin-bottom: 0;
+        flex-direction: column;
+
+        &-right {
+            order: -1;
+        }
+        &-left {
+            padding-right: 5rem;
+            margin-top: 2rem;
+        }
+    }
+}

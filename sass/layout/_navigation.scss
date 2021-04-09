@@ -1,5 +1,4 @@
 .navigation {
-    background-color: $color-white;
     color: $color-navigation-blue;
     width: 80vw;
     margin-right: auto;
@@ -22,7 +21,25 @@
     }
 
     &-options {
+        text-decoration: none;
+        color: $color-navigation-blue;
         margin-left: 2rem;
+
+        &:hover {
+            color: $color-link-hover;
+        }
+    }
+}
+
+@media only screen and(max-width: $small) {
+    .navigation-list {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and(max-width: $extra-small) {
+    .navigation {
+        width: 90vw;
     }
 }
 

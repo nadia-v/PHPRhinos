@@ -1,6 +1,7 @@
 .blue-button {
     padding: 3rem 4rem;
     border: none;
+    outline: none;
     border-radius: 3rem;
     text-decoration: none;
     background-image: linear-gradient(to right, (rgba(73, 96, 249, .9)), (rgba(73, 96, 249, 1)));
@@ -8,6 +9,11 @@
     color: $color-white;
     font-family: 'montserrat', sans-serif;
 
+    &-link {
+        text-decoration: none;
+        color: $color-white;
+    }
+    
     &-phone {
         float:left;
         max-height: 2rem;
@@ -20,4 +26,41 @@
     }
 }
 
+@media (hover:hover) {
+    .blue-button:hover {
+        transform: translateY(-.3rem); 
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.4); 
+    }
+    .blue-button::after {
+        transform: scaleX(1.4) scaleY(1.6); 
+    }
+    .blue-button:active {
+        background-color: darken($color-button-blue, 5%);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .3);
+        transform: translateY(0);
+    }
+}
+
+@media only screen and(max-width: $medium) {
+    .blue-button {
+        padding: 2rem 3rem;
+        border-radius: 2rem;
+    }
+}
+
+@media only screen and(max-width: $small) {
+    .blue-button {
+        padding: 1.5rem 2rem;
+        border-radius: 1.5rem;
+        transform: scale(.75);
+
+        &-phone {
+            max-height: 2rem;
+        }
+
+        &-caption {
+            font-size: 1rem;
+        }
+    }
+}
 

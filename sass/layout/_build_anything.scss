@@ -27,3 +27,22 @@
         text-align: right;
     }
 }
+
+@media only screen and(max-width: $medium) {
+    .build_anything {
+        margin-bottom: 15rem;
+    }
+}
+
+@media only screen and(max-width: $small) {
+    .build_anything {
+        margin-top: 0;
+        margin-bottom: 8rem;
+        flex-direction: column;
+
+        &-text {
+            order: -1;
+            padding-left: 5rem;
+        }
+    }
+}

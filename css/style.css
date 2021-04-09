@@ -1,3 +1,12 @@
+@media only screen and (max-width: 770px) {
+  font-size: 48%; }
+
+@media only screen and (max-width: 540px) {
+  font-size: 30%; }
+
+@media only screen and (max-width: 320px) {
+  font-size: 20%; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -41,14 +50,28 @@ p {
   color: #2642FD;
   font-family: 'motserrat', sans-serif; }
 
+@media only screen and (max-width: 770px) {
+  h1 {
+    font-size: 3rem; } }
+
+@media only screen and (max-width: 540px) {
+  h1 {
+    font-size: 2rem; }
+  p {
+    font-size: 1.2rem; } }
+
 .blue-button {
   padding: 3rem 4rem;
   border: none;
+  outline: none;
   border-radius: 3rem;
   text-decoration: none;
   background-image: linear-gradient(to right, rgba(73, 96, 249, 0.9), #4960f9);
   color: white;
   font-family: 'montserrat', sans-serif; }
+  .blue-button-link {
+    text-decoration: none;
+    color: white; }
   .blue-button-phone {
     float: left;
     max-height: 2rem;
@@ -57,6 +80,32 @@ p {
     display: inline-block;
     font-weight: lighter;
     font-size: 1.6rem; }
+
+@media (hover: hover) {
+  .blue-button:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
+  .blue-button::after {
+    transform: scaleX(1.4) scaleY(1.6); }
+  .blue-button:active {
+    background-color: #304af8;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: translateY(0); } }
+
+@media only screen and (max-width: 770px) {
+  .blue-button {
+    padding: 2rem 3rem;
+    border-radius: 2rem; } }
+
+@media only screen and (max-width: 540px) {
+  .blue-button {
+    padding: 1.5rem 2rem;
+    border-radius: 1.5rem;
+    transform: scale(0.75); }
+    .blue-button-phone {
+      max-height: 2rem; }
+    .blue-button-caption {
+      font-size: 1rem; } }
 
 .about {
   display: flex; }
@@ -81,6 +130,33 @@ p {
     .about-image-mockup {
       max-width: 100%; }
 
+@media only screen and (max-width: 770px) {
+  .about-text {
+    margin-top: 5rem; }
+    .about-text_p {
+      padding-right: 5rem; }
+  .about-specialty {
+    margin-top: 10rem;
+    margin-bottom: 0; }
+  .about-image {
+    margin-bottom: -15rem; } }
+
+@media only screen and (max-width: 540px) {
+  .about-specialty {
+    margin-top: 5rem; } }
+
+@media only screen and (max-width: 320px) {
+  .about {
+    flex-direction: column; }
+    .about-image {
+      order: -1;
+      align-self: center; }
+    .about-text {
+      padding-top: 5rem;
+      width: 80%; }
+      .about-text_p {
+        margin-bottom: 0; } }
+
 .build_anything {
   display: flex;
   margin-right: 10vw;
@@ -101,6 +177,19 @@ p {
   .build_anything-text {
     flex: 1;
     text-align: right; }
+
+@media only screen and (max-width: 770px) {
+  .build_anything {
+    margin-bottom: 15rem; } }
+
+@media only screen and (max-width: 540px) {
+  .build_anything {
+    margin-top: 0;
+    margin-bottom: 8rem;
+    flex-direction: column; }
+    .build_anything-text {
+      order: -1;
+      padding-left: 5rem; } }
 
 .footer {
   display: flex;
@@ -124,15 +213,50 @@ p {
   .footer-right {
     flex: 1;
     display: flex;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    text-decoration: none; }
     .footer-right-list {
       padding-right: 10%;
       list-style: none;
-      text-decoration: none;
       color: #9BA9BB; }
+      .footer-right-list_item {
+        text-decoration: none;
+        color: #9BA9BB; }
+        .footer-right-list_item:hover, .footer-right-list_item:active {
+          color: #7d1a9b; }
       .footer-right-list_title {
         font-weight: bold;
         margin-bottom: 1rem; }
+
+@media only screen and (max-width: 770px) {
+  .footer {
+    padding: 5rem 0 0 5rem; }
+    .footer-left {
+      flex: 1; }
+      .footer-left-shape {
+        transform: scale(0.75); }
+      .footer-left-copyright {
+        font-size: 1.2rem; }
+    .footer-right {
+      justify-content: flex-end; } }
+
+@media only screen and (max-width: 540px) {
+  .footer {
+    flex-direction: column;
+    padding: 4rem 0 0 4rem;
+    font-size: 1.2rem; }
+    .footer-left-figure {
+      margin-bottom: 1.4rem; }
+    .footer-left-shape {
+      transform: scale(0.5) translateY(-1rem); }
+    .footer-left-copyright {
+      margin-top: 4rem;
+      font-size: 1rem; }
+    .footer-right {
+      order: -1;
+      justify-content: space-between; }
+      .footer-right-list {
+        margin-bottom: 3rem; } }
 
 .get_quote {
   display: flex;
@@ -145,6 +269,31 @@ p {
     flex: 1;
     padding-top: 15%; }
 
+@media only screen and (max-width: 770px) {
+  .get_quote {
+    padding: 10% 10% 15% 10%; }
+    .get_quote-image {
+      transform: scale(0.8); }
+    .get_quote-button {
+      padding-top: 10%; } }
+
+@media only screen and (max-width: 540px) {
+  .get_quote {
+    padding: 0; }
+    .get_quote-image {
+      transform: scale(0.5); }
+    .get_quote-button {
+      transform: translateY(-7rem); } }
+
+@media only screen and (max-width: 320px) {
+  .get_quote {
+    margin-top: -4rem;
+    margin-bottom: -3rem; }
+    .get_quote-image {
+      transform: scale(0.3); }
+    .get_quote-button {
+      transform: translateY(-10rem); } }
+
 .icons {
   display: flex;
   justify-content: space-between;
@@ -156,8 +305,23 @@ p {
     font-size: 2.2rem;
     color: #9BA9BB; }
 
+@media only screen and (max-width: 770px) {
+  .icons {
+    padding: 4rem 10%; }
+    .icons-icon-text {
+      font-size: 1.5rem; } }
+
+@media only screen and (max-width: 540px) {
+  .icons-icon {
+    transform: scale(0.7); } }
+
+@media only screen and (max-width: 320px) {
+  .icons {
+    padding: 4rem 5%; }
+    .icons-icon {
+      transform: scale(0.55); } }
+
 .navigation {
-  background-color: white;
   color: #2E49FC;
   width: 80vw;
   margin-right: auto;
@@ -174,7 +338,19 @@ p {
     margin-right: auto;
     font-weight: bold; }
   .navigation-list-options {
+    text-decoration: none;
+    color: #2E49FC;
     margin-left: 2rem; }
+    .navigation-list-options:hover {
+      color: #7d1a9b; }
+
+@media only screen and (max-width: 540px) {
+  .navigation-list {
+    font-size: 1.2rem; } }
+
+@media only screen and (max-width: 320px) {
+  .navigation {
+    width: 90vw; } }
 
 .winning_situation {
   display: flex;
@@ -205,3 +381,21 @@ p {
         top: 15%;
         left: 35%;
         z-index: 10; }
+
+@media only screen and (max-width: 770px) {
+  .winning_situation {
+    margin-bottom: 5rem; }
+    .winning_situation-right {
+      flex: 2; }
+      .winning_situation-right-text {
+        padding: 0; } }
+
+@media only screen and (max-width: 540px) {
+  .winning_situation {
+    margin-bottom: 0;
+    flex-direction: column; }
+    .winning_situation-right {
+      order: -1; }
+    .winning_situation-left {
+      padding-right: 5rem;
+      margin-top: 2rem; } }

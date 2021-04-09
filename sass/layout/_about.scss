@@ -32,6 +32,54 @@
     }
 }
 
+@media only screen and(max-width: $medium) {
+    .about {
+        &-text {
+            margin-top: 5rem;
+            &_p {
+                padding-right: 5rem;
+            }
+        }
+
+        &-specialty {
+            margin-top: 10rem;
+            margin-bottom: 0;
+        }
+
+        &-image {
+            margin-bottom: -15rem;
+        }
+    }
+}
+
+@media only screen and(max-width: $small) {
+    .about {
+        &-specialty {
+            margin-top: 5rem;
+        }
+    }
+}
+
+@media only screen and(max-width: $extra-small) {
+    .about {
+        flex-direction: column;
+
+        &-image {
+            order: -1;
+            align-self: center;
+        }
+
+        &-text {
+            padding-top: 5rem;
+            width: 80%;
+
+            &_p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
 
 
 

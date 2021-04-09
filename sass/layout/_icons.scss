@@ -14,3 +14,33 @@
         }
     }
 }
+
+@media only screen and(max-width: $medium) {
+    .icons {
+        padding: 4rem 10%;
+
+        &-icon {
+            &-text {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: $small) {
+    .icons {
+        &-icon {
+            transform: scale(.7);
+        }
+    }
+}
+
+@media only screen and(max-width: $extra-small) {
+    .icons {
+        padding: 4rem 5%;
+
+        &-icon {
+            transform: scale(.55);
+        }
+    }
+}
